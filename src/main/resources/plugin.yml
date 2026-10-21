@@ -1,0 +1,17 @@
+name: SHCropsGrowth
+version: '${project.version}'
+main: org.Cry_Legende.sHCropsGrowth.SHCropsGrowth
+api-version: '1.20'
+author: Cry_Legende
+description: Modifie la vitesse de croissance des cultures individuellement et corrige le bug du cactus.
+
+commands:
+  shcropsgrowthreload:
+    description: Recharge la configuration du plugin SHCropsGrowth.
+    usage: /shcropsgrowthreload
+    permission: shcropsgrowth.reload
+
+permissions:
+  shcropsgrowth.reload:
+    description: Permet à l'utilisateur de recharger la configuration de SHCropsGrowth.
+    default: op

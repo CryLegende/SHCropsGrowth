@@ -1,0 +1,42 @@
+# SHCropsGrowth Configuration
+#
+# Modificateurs de vitesse de croissance pour différents types de cultures.
+# Une valeur de 1.0 est la vitesse normale de Minecraft.
+# Une valeur de 2.0 signifie deux fois plus rapide.
+# Une valeur de 0.5 signifie deux fois plus lent.
+#
+# Cultures supportées (noms des Materials Bukkit) :
+# WHEAT, CARROTS, POTATOES, BEETROOTS, NETHER_WART, COCOA (pour les fèves de cacao sur les troncs)
+# MELON_STEM, PUMPKIN_STEM (pour les tiges, pas les fruits eux-mêmes)
+# SUGAR_CANE, CACTUS, BAMBOO, KELP_PLANT
+# SWEET_BERRY_BUSH
+# VINE, TWISTING_VINES, WEEPING_VINES (la croissance des lianes est différente)
+#
+# Exemple:
+# growth-modifiers:
+#   WHEAT: 1.5  # Blé 50% plus rapide
+#   CACTUS: 0.8 # Cactus 20% plus lent (mais se cassera correctement)
+#   SUGAR_CANE: 1.0 # Vitesse normale pour la canne à sucre
+
+growth-modifiers:
+  # Cultures Ageable (qui ont des stades de croissance)
+  WHEAT: 1.0
+  CARROTS: 1.0
+  POTATOES: 1.0
+  BEETROOTS: 1.0
+  NETHER_WART: 1.0
+  COCOA: 0.9 # Fèves de cacao
+  SWEET_BERRY_BUSH: 1.0
+  MELON_STEM: 1.0 # Tiges de melon
+  PUMPKIN_STEM: 1.0 # Tiges de citrouille
+  BAMBOO: 1.0 # Bambou est aussi Ageable pour sa "feuille"
+  KELP: 0.3 # Kelp est Ageable pour son "âge"/hauteur
+
+  # Cultures qui grandissent en hauteur (non-Ageable typiquement)
+  CACTUS: 0.7
+  SUGAR_CANE: 0.9
+
+  # Autres
+  VINE: 0.6 # Lianes
+  TWISTING_VINES: 0.6
+  WEEPING_VINES: 0.6
